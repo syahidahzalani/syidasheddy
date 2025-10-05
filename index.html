@@ -23,7 +23,6 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            /* Girlish pastel gradient */
             background: linear-gradient(45deg, #FFC0CB, #E0BBE4, #957DAD, #D291BC); /* Pink, Lilac, Mauve, Dusty Rose */
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
@@ -43,25 +42,25 @@
             width: 100%;
             max-width: 400px;
             text-align: center;
-            background: rgba(255, 255, 255, 0.2); /* Slightly more opaque for better contrast */
+            background: rgba(255, 255, 255, 0.2);
             padding: 40px 30px;
-            border-radius: 25px; /* Slightly more rounded */
+            border-radius: 25px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly more defined border */
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
         }
 
         /* --- Profile Section --- */
         h1 {
-            font-size: 2.2em; /* Made username larger as it's now the main title */
+            font-size: 2.2em;
             font-weight: 700;
-            margin-bottom: 12px; /* Increased bottom margin */
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* Text shadow for pop */
+            margin-bottom: 12px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
 
         p {
-            font-size: 1.1em; /* Slightly larger */
-            margin-bottom: 35px; /* More spacing */
+            font-size: 1.1em;
+            margin-bottom: 35px;
             opacity: 0.95;
             line-height: 1.5;
         }
@@ -73,41 +72,34 @@
             justify-content: center;
             text-decoration: none;
             color: #fff;
-            background: rgba(255, 255, 255, 0.25); /* More prominent link background */
-            padding: 18px 25px; /* Larger padding */
-            margin: 18px 0; /* More spacing between links */
-            border-radius: 12px; /* More rounded links */
-            font-size: 1.2em; /* Larger text */
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 18px 25px;
+            margin: 18px 0;
+            border-radius: 12px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .links a:hover {
-            transform: translateY(-5px) scale(1.02); /* Lift and slightly scale on hover */
-            background: rgba(255, 255, 255, 0.4); /* Brighter on hover */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px) scale(1.02);
+            filter: brightness(1.15); /* Brightens the color on hover */
         }
 
         .links a i {
-            margin-right: 18px; /* More spacing for icons */
-            font-size: 1.6em; /* Larger icons */
-            color: #fff; /* Ensure icon color is white */
+            margin-right: 18px;
+            font-size: 1.6em;
         }
 
-        /* Specific icon colors for a pop */
-        .fa-whatsapp { color: #25D366; } /* WhatsApp green */
-        .fa-telegram { color: #0088CC; } /* Telegram blue */
-        .fa-instagram { 
-            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .fa-tiktok { color: #69C9D0; } /* TikTok light blue */
-
+        /* --- BRAND COLORS FOR BUTTONS --- */
+        .whatsapp-btn { background-color: #25D366; }
+        .telegram-btn { background-color: #0088CC; }
+        .instagram-btn { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+        .tiktok-btn { background-color: #010101; }
 
         /* --- Footer --- */
         footer {
-            margin-top: 35px; /* More spacing */
+            margin-top: 35px;
             font-size: 0.9em;
             opacity: 0.8;
             text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
@@ -121,28 +113,28 @@
         
         <h1>@syidasheddy</h1>
         
-        <p>Hello gorgeous! ✨ Let's connect and share some good vibes.</p>
+        <p>Hi, Saya Syida 👋 Boleh ws or tele untuk tengok rumah shop kita 🏠🛍️✨</p>
 
         <div class="links">
-            <a href="https://wa.me/60176712347" target="_blank">
+            <a href="https://wa.me/60176712347" target="_blank" class="whatsapp-btn">
                 <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
 
-            <a href="https://t.me/babybundleSH" target="_blank">
+            <a href="https://t.me/babybundleSH" target="_blank" class="telegram-btn">
                 <i class="fab fa-telegram"></i> Telegram
             </a>
             
-            <a href="https://instagram.com/syidasheddy" target="_blank">
+            <a href="https://instagram.com/syidasheddy" target="_blank" class="instagram-btn">
                 <i class="fab fa-instagram"></i> Instagram
             </a>
 
-            <a href="https://tiktok.com/@syidasheddy" target="_blank">
+            <a href="https://tiktok.com/@syidasheddy" target="_blank" class="tiktok-btn">
                 <i class="fab fa-tiktok"></i> TikTok
             </a>
         </div>
         
         <footer>
-            &copy; 2025 SyidaSheddy. All rights reserved.
+            &copy; 2025 Syida Sheddy. All rights reserved.
         </footer>
 
     </div>
